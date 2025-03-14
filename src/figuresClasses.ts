@@ -38,7 +38,7 @@ export class Circle implements Figure {
     public radius: number,
   ) {
     if (radius <= 0) {
-      throw new Error('Sides must be greater than zero');
+      throw new Error('Radius must be greater than zero');
     }
   }
 
@@ -58,7 +58,7 @@ export class Rectangle implements Figure {
     public height: number,
   ) {
     if (height <= 0 || width <= 0) {
-      throw new Error('Sides must be greater than zero');
+      throw new Error('Width and height must be greater than zero');
     }
   }
 
